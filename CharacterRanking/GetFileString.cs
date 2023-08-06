@@ -23,7 +23,17 @@ namespace CharacterRanking
 
                 InputText = inputText;
             }
-            catch (System.Exception)
+            catch (FileNotFoundException)
+            {
+                Console.WriteLine("Arquivo não encontrado.");
+                GetText();
+            }
+            catch (ArgumentException)
+            {
+                Console.WriteLine("Caminho inválido.");
+                GetText();
+            }
+            catch (Exception)
             {
                 Console.WriteLine("Erro ao ler o arquivo de entrada.");
                 GetText();
