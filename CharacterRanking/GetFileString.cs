@@ -12,7 +12,7 @@ namespace CharacterRanking
             GetText();
         }
 
-        public void GetText()
+        private void GetText()
         {
             try
             {
