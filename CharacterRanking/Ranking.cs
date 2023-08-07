@@ -18,7 +18,7 @@ namespace CharacterRanking
         {
             for (int i = 0; i < CharacterCount.Count; i++)
             {
-                OrderedRanking.Add($"{i + 1}º: {CharacterCount[i].Key} - {CharacterCount[i].Value}");
+                OrderedRanking.Add($"{i + 1}º - {CharacterCount[i].Key}: {CharacterCount[i].Value}");
                 Console.WriteLine(OrderedRanking[i]);
             };
         }
