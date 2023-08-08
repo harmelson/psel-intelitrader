@@ -4,17 +4,10 @@
     {
         static void Main()
         {
-            HelloWorld helloWorld = new HelloWorld();
-            string message = helloWorld.GetHelloWorld();
-            Console.WriteLine(message);
-        }
-    }
+            GetFileString getFileString = new();
+            Encrypt encripted = new Encrypt(getFileString.InputText ?? string.Empty);
 
-    public class HelloWorld
-    {
-        public string GetHelloWorld()
-        {
-            return "Hello World!";
+            _ = new ConvertToFile(encripted.EncryptedString ?? string.Empty);
         }
     }
 }
