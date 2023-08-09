@@ -81,7 +81,7 @@ dotnet run
 
   </details>
   <details>
-    <summary><strong>CaesarCipher</strong></summary>
+    <summary><strong>Characters Ranking</strong></summary>
     Tendo iniciado a aplicação como foi ensinado no bloco anterior, siga os passos abaixo:
     </br>
     1. Informe o caminho a partir da pasta atual do projeto do arquivo de texto que deseja rankear os caracteres:
