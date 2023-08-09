@@ -24,8 +24,7 @@ namespace CaesarCipher
 
                 string inputText = File.ReadAllText(InputFilePath, Encoding.UTF8);
 
-                inputText = inputText.Normalize();
-                InputText = inputText.ToUpper();
+                InputText = inputText;
             }
             catch (FileNotFoundException)
             {
