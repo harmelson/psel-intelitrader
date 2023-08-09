@@ -19,10 +19,41 @@ namespace CaesarCipher
                 OutPath = Console.ReadLine() ?? string.Empty;
                 File.WriteAllText(OutPath, StringToConvert);
             }
-            catch (System.Exception)
+            catch (DirectoryNotFoundException)
             {
+                Console.WriteLine("Caminho inválido.");
                 Converter();
             }
+            catch (PathTooLongException)
+            {
+                Console.WriteLine("Caminho muito longo.");
+                Converter();
+            }
+            catch (IOException)
+            {
+                Console.WriteLine("Erro ao escrever o arquivo.");
+                Converter();
+            }
+            catch (UnauthorizedAccessException)
+            {
+                Console.WriteLine("Acesso negado.");
+                Converter();
+            }
+            catch (NotSupportedException)
+            {
+                Console.WriteLine("Extensão não suportada.");
+                Converter();
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Caminho inválido.");
+                Converter();
+            }
+            finally
+            {
+                Console.WriteLine("Arquivo criptografado/descriptografado com sucesso.");
+            }
+
         }
     }
 }
