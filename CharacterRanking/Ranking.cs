@@ -16,6 +16,7 @@ namespace CharacterRanking
 
         private void PrintRanking()
         {
+            Console.WriteLine("Ranking:");
             for (int i = 0; i < CharacterCount.Count; i++)
             {
                 OrderedRanking.Add($"{i + 1}º - {CharacterCount[i].Key}: {CharacterCount[i].Value}");
