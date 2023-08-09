@@ -63,12 +63,12 @@ namespace CaesarCipher
 
         private void GetKey()
         {
-            Console.WriteLine("Digite um número inteiro entre 1 e 26: ");
+            Console.WriteLine("Digite um número inteiro entre 1 e 25: ");
             string keyInput = Console.ReadLine() ?? string.Empty;
 
             bool isKeyInputInt = int.TryParse(keyInput, out int convertedKey);
 
-            if(!isKeyInputInt || convertedKey <= 0 || convertedKey > 26)
+            if(!isKeyInputInt || convertedKey <= 0 || convertedKey > 25)
             {
                 GetKey();
             }
