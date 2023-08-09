@@ -8,7 +8,7 @@ namespace CharacterRanking
         public CharacterCounter(string inputText)
         {
             InputText = inputText;
-
+            
             CounterCharacters();
         }
 
