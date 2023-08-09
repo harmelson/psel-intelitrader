@@ -1,12 +1,16 @@
-﻿namespace CharacterRanking
+﻿using System.Diagnostics;
+
+namespace CharacterRanking
 {
     class Program
     {
         static void Main()
         {
-            Console.WriteLine("Digite o endereço do arquivo de entrada:");
-            string? inputFilePath = Console.ReadLine();
-            
+            GetFileString getFileString = new();
+
+            CharacterCounter characterCounter = new(getFileString.InputText ?? string.Empty);
+
+            _ = new Ranking(characterCounter.CharacterCount);            
         }
     }
 }
