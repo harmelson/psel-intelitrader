@@ -62,7 +62,7 @@ dotnet run
 ## :books: Documentação
   <summary><strong>Instruções de uso</strong></summary><br />
   <details>
-    <summary><strong>CaesarCipher</strong></summary>
+    <summary><strong>Caesar Cipher</strong></summary>
     Tendo iniciado a aplicação como foi ensinado no bloco anterior, siga os passos abaixo:
     </br>
     1. Informe o caminho a partir da pasta atual do projeto do arquivo que deseja criptografar/descriptografar:
