@@ -46,9 +46,10 @@ namespace CaesarCipher
                 {
                     int isEncryptOrDecrypt = EncryptDecrypt == EEncryptDecrypt.Encrypt ? Key : -Key;
 
-                    int charIndex = character - 'A';
+                     char isUpperCase = char.IsUpper(character) ? 'A' : 'a';
+                    int charIndex = character - isUpperCase;
                     
-                    char newChar = (char)((charIndex + isEncryptOrDecrypt + 26) % 26 + 'A');
+                    char newChar = (char)((charIndex + isEncryptOrDecrypt + 26) % 26 + isUpperCase);
 
                     encrypitedStringBuilder.Append(newChar);
                 }
