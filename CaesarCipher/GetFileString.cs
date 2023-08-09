@@ -19,7 +19,7 @@ namespace CaesarCipher
         {
             try
             {
-                Console.WriteLine("Digite o caminho do arquivo:");
+                Console.WriteLine("Digite o caminho do arquivo a ser criptografado/descriptografado:");
                 InputFilePath = Console.ReadLine() ?? string.Empty;
 
                 string inputText = File.ReadAllText(InputFilePath, Encoding.UTF8);
